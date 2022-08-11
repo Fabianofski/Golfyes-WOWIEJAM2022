@@ -1,4 +1,4 @@
-# Earn-To-Fly
+# WOWIE JAM 2022
  
 <!-- ABOUT THE PROJECT -->
 ## About The Project

@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: PlayingField
+    uniqueID: 3351857969
+    locked: 0
+  - name: Border
+    uniqueID: 2914100559
+    locked: 0
+  - name: Ball
+    uniqueID: 1750222915
+    locked: 0

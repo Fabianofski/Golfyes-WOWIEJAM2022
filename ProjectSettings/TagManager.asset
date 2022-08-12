@@ -47,6 +47,12 @@ TagManager:
   - name: Border
     uniqueID: 2914100559
     locked: 0
+  - name: Hole
+    uniqueID: 3580602867
+    locked: 0
   - name: Ball
     uniqueID: 1750222915
+    locked: 0
+  - name: Flag
+    uniqueID: 3544987085
     locked: 0

@@ -10,7 +10,7 @@ namespace F4B1.Tests.EditMode
 {
     public class UIManagerEditModeTests
     {
-        [Test]
+        /*[Test]
         public void OnPause()
         {
             BoolVariable pauseToggle = ScriptableObject.CreateInstance<BoolVariable>();
@@ -22,6 +22,6 @@ namespace F4B1.Tests.EditMode
             
             uiManager.OnPause();
             Assert.IsFalse(pauseToggle.Value);
-        }
+        }*/
     }
 }

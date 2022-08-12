@@ -23,6 +23,7 @@ namespace F4B1.Core
         private Vector2 _mousePos;
         private Vector2 _dragStartPos;
         private bool _dragging;
+        private bool _ballIsStill;
 
         private void Awake()
         {
@@ -31,14 +32,15 @@ namespace F4B1.Core
 
         private void Shoot()
         {
-            Debug.Log("Shoot");
-            _rb2d.AddForce(dragPower.Value * _dir * shootPower, ForceMode2D.Impulse);
+            if (!_ballIsStill) return;
+            _rb2d.AddForce(MathF.Pow(dragPower.Value, 2) * _dir * shootPower, ForceMode2D.Impulse);
             dragPower.Value = 0;
         }
 
         private void Update()
         {
-            if (_dragging) DrawPowerLine();
+            _ballIsStill = _rb2d.velocity == Vector2.zero;
+            if (_dragging && _ballIsStill) DrawPowerLine();
         }
 
         private void DrawPowerLine()
@@ -57,6 +59,8 @@ namespace F4B1.Core
 
         public void OnClick(InputValue value)
         {
+            if (!_ballIsStill) return;
+            
             if (value.isPressed)
             {
                 var hit = Physics2D.Raycast(_mousePos, Vector2.zero, layerMask);

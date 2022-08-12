@@ -242,7 +242,6 @@ GameObject:
   - component: {fileID: 4631399522506307661}
   - component: {fileID: 4631399522506307660}
   - component: {fileID: 4631399522506307659}
-  - component: {fileID: 4631399522506307658}
   m_Layer: 5
   m_Name: UI MANAGER
   m_TagString: Untagged
@@ -287,6 +286,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseToggled: {fileID: 11400000, guid: f85b82cdd999f924ab81d3f0ddc0eecc, type: 2}
+  pauseInputAction:
+    m_Name: Pause Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: eb8f9aed-ccde-42da-b7d1-2b901fc1f95b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: a1192cab-73f9-4041-b769-0ebcaa7e14c2
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause Input
+      m_Flags: 0
+    m_Flags: 0
 --- !u!114 &4631399522506307659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,36 +316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstSelected: {fileID: 0}
---- !u!114 &4631399522506307658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4631399522506307662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 5efc91c01d6311e47aae55dee98ead93, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard&Mouse
-  m_DefaultActionMap: UI
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &4631399522887093316
 GameObject:
   m_ObjectHideFlags: 0

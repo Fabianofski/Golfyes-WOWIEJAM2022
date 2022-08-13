@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
+using F4B1.Core.Triggerable;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace F4B1.Core
 {

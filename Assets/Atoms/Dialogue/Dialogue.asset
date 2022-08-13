@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b83dec8f7df99f34fb882c769df71111, type: 3}
-  m_Name: PlaySoundEvent
+  m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
+  m_Name: Dialogue
   m_EditorClassIdentifier: 
-  _developerDescription: 
-  _replayBufferSize: 0
-  _inspectorRaiseValue: {fileID: 11400000, guid: cf8c94f672906f548bfacba650137366, type: 2}
+  dialogueText: Hey whats going on? This is a golf ball right? Oh yeah!
+  voiceLine: {fileID: 11400000, guid: c143a11d1d5e4b241851978dd8640b52, type: 2}

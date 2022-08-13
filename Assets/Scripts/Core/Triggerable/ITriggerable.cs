@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace F4B1.Core
+namespace F4B1.Core.Triggerable
 {
     public interface ITriggerable
     {

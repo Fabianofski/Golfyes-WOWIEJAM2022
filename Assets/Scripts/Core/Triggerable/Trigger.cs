@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Triggerable
 {
     public class Trigger : MonoBehaviour
     {

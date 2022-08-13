@@ -2,7 +2,7 @@
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Triggerable
 {
     public class CoinTriggerable : MonoBehaviour, ITriggerable
     {

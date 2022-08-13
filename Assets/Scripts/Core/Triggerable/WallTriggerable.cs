@@ -1,7 +1,7 @@
 ﻿using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Triggerable
 {
     public class WallTriggerable : MonoBehaviour, ITriggerable
     {
@@ -24,6 +24,7 @@ namespace F4B1.Core
 
         private void SetWallActive()
         {
+            LeanTween.scale(gameObject, new Vector3(1.2f,1.2f,1), .3f).setEase(LeanTweenType.punch);
             _collider2D.enabled = true;
             transform.GetChild(0).gameObject.SetActive(true);
         }

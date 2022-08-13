@@ -15,6 +15,7 @@ namespace F4B1.Core
         [SerializeField] private float dragLength;
         [SerializeField] private float shootPower;
         [SerializeField] private LayerMask layerMask;
+        [SerializeField] private IntVariable strokes;
         
         [SerializeField] private FloatVariable dragPower;
         private Vector2 _dir;
@@ -23,7 +24,7 @@ namespace F4B1.Core
         private Vector2 _mousePos;
         private Vector2 _dragStartPos;
         private bool _dragging;
-        private bool _ballIsStill;
+        [SerializeField] private BoolVariable ballIsStill;
 
         private void Awake()
         {
@@ -32,15 +33,16 @@ namespace F4B1.Core
 
         private void Shoot()
         {
-            if (!_ballIsStill) return;
+            if (!ballIsStill.Value) return;
+            strokes.Value++;
             _rb2d.AddForce(MathF.Pow(dragPower.Value, 2) * _dir * shootPower, ForceMode2D.Impulse);
             dragPower.Value = 0;
         }
 
         private void Update()
         {
-            _ballIsStill = _rb2d.velocity == Vector2.zero;
-            if (_dragging && _ballIsStill) DrawPowerLine();
+            ballIsStill.Value = _rb2d.velocity == Vector2.zero;
+            if (_dragging && ballIsStill.Value) DrawPowerLine();
         }
 
         private void DrawPowerLine()
@@ -59,7 +61,7 @@ namespace F4B1.Core
 
         public void OnClick(InputValue value)
         {
-            if (!_ballIsStill) return;
+            if (!ballIsStill.Value) return;
             
             if (value.isPressed)
             {

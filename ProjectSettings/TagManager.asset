@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -12,8 +13,8 @@ TagManager:
   - Water
   - UI
   - Ball
-  - 
-  - 
+  - Boundary
+  - Goal
   - 
   - 
   - 
@@ -52,6 +53,9 @@ TagManager:
     locked: 0
   - name: Ball
     uniqueID: 1750222915
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3870780191
     locked: 0
   - name: Flag
     uniqueID: 3544987085

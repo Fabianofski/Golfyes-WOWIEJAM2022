@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,7 +13,8 @@ namespace F4B1.UI
     {
         [SerializeField] private BoolVariable pauseToggled;
         [SerializeField] private InputAction pauseInputAction;
-        
+        [SerializeField] private List<AtomBaseVariable> resetAtoms;
+
         public BoolVariable PauseToggled
         {
             set => pauseToggled = value;
@@ -40,22 +42,33 @@ namespace F4B1.UI
         
         public void LoadNextScene()
         {
+            ResetAtoms();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         public void LoadMenuScene()
         {
+            ResetAtoms();
             SceneManager.LoadScene(0);
         }
 
         public void ReloadCurrentScene()
         {
+            ResetAtoms();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void QuitApplication()
         {
             Application.Quit();
+        }
+
+        private void ResetAtoms()
+        {
+            foreach (var atom in resetAtoms)
+            {
+                atom.Reset();
+            }
         }
     }
 }

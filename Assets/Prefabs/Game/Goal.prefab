@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5304407342500182}
   - component: {fileID: 5304407342500169}
   - component: {fileID: 5304407342500168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -749980211
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 839302530, guid: 274481622c4acef468eb0a6bb862cd89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 5304408716134341}
   - component: {fileID: 5304408716134343}
   - component: {fileID: 5304408716134340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,14 +204,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0e3fd1340ab104bb8b0f850e0d8d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
   ballSpeedThreshold: 5
   ballDistanceThreshold: 0.18
   levelIsCompleted: {fileID: 11400000, guid: 365a9d9650726274d8b04fa16d6a35d0, type: 2}
   ballScaleTweenType: 36
   ballScaleTweenDuration: 0.5
+  goalMoveTweenType: 9
+  goalMoveTweenDuration: 2
+  goalPositions:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!58 &5304408716134340
 CircleCollider2D:
   m_ObjectHideFlags: 0

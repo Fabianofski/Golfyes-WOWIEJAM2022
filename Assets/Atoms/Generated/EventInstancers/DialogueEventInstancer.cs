@@ -1,5 +1,5 @@
+using Atoms.Generated;
 using UnityEngine;
-using F4B1.Core;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-sign-blue")]
     [AddComponentMenu("Unity Atoms/Event Instancers/Dialogue Event Instancer")]
-    public class DialogueEventInstancer : AtomEventInstancer<F4B1.Core.Dialogue, DialogueEvent> { }
+    public class DialogueEventInstancer : AtomEventInstancer<Dialogue, DialogueEvent> { }
 }

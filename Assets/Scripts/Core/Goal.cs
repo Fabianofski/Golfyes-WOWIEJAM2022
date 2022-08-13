@@ -38,7 +38,7 @@ namespace F4B1.Core
                 levelIsCompleted.Value = true;
                 rb2d.velocity = Vector2.zero;
                 col.transform.parent = transform;
-                col.transform.position = transform.position;
+                LeanTween.move(col.gameObject, transform.position, .3f);
                 LeanTween.scale(col.gameObject, Vector3.zero, ballScaleTweenDuration).setEase(ballScaleTweenType);
             }
         }

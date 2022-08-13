@@ -1,22 +1,28 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Atoms.Generated;
 using TMPro;
+using UnityAtoms;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 namespace F4B1.Core
 {
-    public class AIController : MonoBehaviour
+    public class AIDialogueController : MonoBehaviour
     {
 
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private GameObject speechBubble;
         [SerializeField] private LeanTweenType speechBubbleTweenType;
+        [SerializeField] private Image emotionImage;
+        [SerializeField] private SoundEvent playSoundEvent;
         private Queue<char> _characterQueue;        
         private Queue<Dialogue> _dialogueQueue;
         private float _timePerChar;
-        private bool _coroutineRunning;
+        [SerializeField] private BoolVariable aiTalking;
 
 
         private void Start()
@@ -27,7 +33,7 @@ namespace F4B1.Core
         public void PlayDialogue(Dialogue dialogue)
         {
             _dialogueQueue.Enqueue(dialogue);
-            if(!_coroutineRunning) FillCharQueue();
+            if(!aiTalking.Value) FillCharQueue();
         }
 
         private void FillCharQueue()
@@ -42,18 +48,28 @@ namespace F4B1.Core
             _timePerChar = dialogue.voiceLine.clip.length / _characterQueue.Count;
 
             StopAllCoroutines();
+            playSoundEvent.Raise(dialogue.voiceLine);
+            emotionImage.sprite = dialogue.robotEmotion;
             StartCoroutine(nameof(DisplayNextCharacter));
         }
         
         private IEnumerator DisplayNextCharacter()
         {
-            _coroutineRunning = true;
+            aiTalking.Value = true;
             dialogueText.text += _characterQueue.Dequeue();
             yield return new WaitForSeconds(_timePerChar);
             
             if (_characterQueue.Count > 0) StartCoroutine(nameof(DisplayNextCharacter));
             else if (_dialogueQueue.Count > 0) FillCharQueue();
-            else _coroutineRunning = false;
+            else
+            {
+                aiTalking.Value = false;
+
+                yield return new WaitForSeconds(1f);
+                
+                dialogueText.text = "";
+                LeanTween.scale(speechBubble, Vector3.zero, .3f).setEase(speechBubbleTweenType);
+            }
         }
         
     }

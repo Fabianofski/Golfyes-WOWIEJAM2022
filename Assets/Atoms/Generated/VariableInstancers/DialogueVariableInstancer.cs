@@ -1,6 +1,6 @@
+using Atoms.Generated;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
-using F4B1.Core;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -12,7 +12,7 @@ namespace UnityAtoms.BaseAtoms
     public class DialogueVariableInstancer : AtomVariableInstancer<
         DialogueVariable,
         DialoguePair,
-        F4B1.Core.Dialogue,
+        Dialogue,
         DialogueEvent,
         DialoguePairEvent,
         DialogueDialogueFunction>

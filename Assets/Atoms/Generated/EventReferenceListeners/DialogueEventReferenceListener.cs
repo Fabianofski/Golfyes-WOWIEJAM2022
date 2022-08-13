@@ -1,5 +1,5 @@
+using Atoms.Generated;
 using UnityEngine;
-using F4B1.Core;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -9,7 +9,7 @@ namespace UnityAtoms.BaseAtoms
     [EditorIcon("atom-icon-orange")]
     [AddComponentMenu("Unity Atoms/Listeners/Dialogue Event Reference Listener")]
     public sealed class DialogueEventReferenceListener : AtomEventReferenceListener<
-        F4B1.Core.Dialogue,
+        Dialogue,
         DialogueEvent,
         DialogueEventReference,
         DialogueUnityEvent>

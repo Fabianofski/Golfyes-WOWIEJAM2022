@@ -1,7 +1,7 @@
 ﻿using F4B1.Audio;
 using UnityEngine;
 
-namespace F4B1.Core
+namespace Atoms.Generated
 {
     [CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue/New Dialogue", order = 0)]
     public class Dialogue : ScriptableObject
@@ -9,5 +9,6 @@ namespace F4B1.Core
         [TextArea(3,10)]
         public string dialogueText;
         public Sound voiceLine;
+        public Sprite robotEmotion;
     }
 }

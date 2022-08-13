@@ -204,8 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0e3fd1340ab104bb8b0f850e0d8d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeedThreshold: 5
-  ballDistanceThreshold: 0.18
+  ballSpeedThreshold: 8
+  ballDistanceThreshold: 0.25
   levelIsCompleted: {fileID: 11400000, guid: 365a9d9650726274d8b04fa16d6a35d0, type: 2}
   ballScaleTweenType: 36
   ballScaleTweenDuration: 0.5
@@ -229,4 +229,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3

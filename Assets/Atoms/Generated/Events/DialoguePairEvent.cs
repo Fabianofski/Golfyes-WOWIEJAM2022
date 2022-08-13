@@ -1,5 +1,4 @@
 using UnityEngine;
-using F4B1.Core;
 
 namespace UnityAtoms.BaseAtoms
 {

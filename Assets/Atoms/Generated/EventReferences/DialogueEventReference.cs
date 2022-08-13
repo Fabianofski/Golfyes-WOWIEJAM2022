@@ -1,5 +1,5 @@
 using System;
-using F4B1.Core;
+using Atoms.Generated;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,7 +8,7 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [Serializable]
     public sealed class DialogueEventReference : AtomEventReference<
-        F4B1.Core.Dialogue,
+        Dialogue,
         DialogueVariable,
         DialogueEvent,
         DialogueVariableInstancer,

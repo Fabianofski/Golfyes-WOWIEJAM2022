@@ -1,6 +1,6 @@
 using UnityEngine;
 using System;
-using F4B1.Core;
+using Atoms.Generated;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -9,9 +9,9 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-lush")]
     [CreateAssetMenu(menuName = "Unity Atoms/Variables/Dialogue", fileName = "DialogueVariable")]
-    public sealed class DialogueVariable : AtomVariable<F4B1.Core.Dialogue, DialoguePair, DialogueEvent, DialoguePairEvent, DialogueDialogueFunction>
+    public sealed class DialogueVariable : AtomVariable<Dialogue, DialoguePair, DialogueEvent, DialoguePairEvent, DialogueDialogueFunction>
     {
-        protected override bool ValueEquals(F4B1.Core.Dialogue other)
+        protected override bool ValueEquals(Dialogue other)
         {
             throw new NotImplementedException();
         }

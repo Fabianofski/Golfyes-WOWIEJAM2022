@@ -2,7 +2,6 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityAtoms.Editor;
-using F4B1.Core;
 
 namespace UnityAtoms.BaseAtoms.Editor
 {

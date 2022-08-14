@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Dialogue
   m_EditorClassIdentifier: 
-  dialogueText: Hey whats going on? This is a golf ball right? Oh yeah!
+  dialogueText: Hello? This is a golf ball right?
   voiceLine: {fileID: 11400000, guid: c143a11d1d5e4b241851978dd8640b52, type: 2}
+  robotEmotion: {fileID: -995585462, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

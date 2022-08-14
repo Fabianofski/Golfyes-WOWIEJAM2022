@@ -60,13 +60,16 @@ namespace F4B1.Core
             yield return new WaitForSeconds(_timePerChar);
             
             if (_characterQueue.Count > 0) StartCoroutine(nameof(DisplayNextCharacter));
-            else if (_dialogueQueue.Count > 0) FillCharQueue();
+            else if (_dialogueQueue.Count > 0)
+            {
+                yield return new WaitForSeconds(1f);
+                FillCharQueue();
+            }
             else
             {
-                aiTalking.Value = false;
-
                 yield return new WaitForSeconds(1f);
                 
+                aiTalking.Value = false;
                 dialogueText.text = "";
                 LeanTween.scale(speechBubble, Vector3.zero, .3f).setEase(speechBubbleTweenType);
             }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Atoms.Generated;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
 namespace F4B1.Core.Triggerable
@@ -9,6 +11,8 @@ namespace F4B1.Core.Triggerable
     {
 
         [SerializeField] private List<Triggerable> triggerables;
+        [SerializeField] private DialogueEvent dialogueEvent;
+        [SerializeField] private List<Dialogue> dialogues;
         [SerializeField] private bool oneTimeTrigger;
         private bool _ballInTrigger;
         
@@ -19,6 +23,9 @@ namespace F4B1.Core.Triggerable
 
             foreach (var t in triggerables)
                 t.triggerableGameObject.GetComponent<ITriggerable>().Trigger(t.offset);
+            foreach (var dialogue in dialogues)
+                dialogueEvent.Raise(dialogue);
+            
             if (oneTimeTrigger) Destroy(gameObject);
         }
 

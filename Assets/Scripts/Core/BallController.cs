@@ -41,7 +41,7 @@ namespace F4B1.Core
 
         private void Update()
         {
-            ballIsStill.Value = _rb2d.velocity == Vector2.zero;
+            ballIsStill.Value = _rb2d.velocity.magnitude < .1f;
             if (_dragging && ballIsStill.Value) DrawPowerLine();
         }
 

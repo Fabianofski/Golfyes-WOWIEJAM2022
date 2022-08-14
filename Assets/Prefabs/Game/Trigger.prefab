@@ -46,6 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerables: []
+  dialogueEvent: {fileID: 11400000, guid: 1f202f1b218b58a45a591725d15113df, type: 2}
+  dialogues:
+  - {fileID: 11400000, guid: 676bf677f72a83c4ead65c84a30c23e7, type: 2}
+  - {fileID: 11400000, guid: 9bfb533fcfdd86140891d3e4315418c6, type: 2}
   oneTimeTrigger: 1
 --- !u!61 &7813343793798586050
 BoxCollider2D:

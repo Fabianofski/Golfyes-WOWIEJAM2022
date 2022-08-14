@@ -8,6 +8,7 @@ namespace F4B1.Audio
         public void PlaySound(Sound sound)
         {
             GameObject audioObject = new GameObject(){ name = sound.clip.name};
+            if (sound.dontDestroyOnLoad) DontDestroyOnLoad(audioObject);
             AudioSource source = audioObject.AddComponent<AudioSource>();
             source.playOnAwake = false;
             source.outputAudioMixerGroup = sound.outputAudioMixerGroup;

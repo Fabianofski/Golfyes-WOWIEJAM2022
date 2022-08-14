@@ -3275,9 +3275,10 @@ MonoBehaviour:
   moveTweenType: 12
   aiOpacity: 0.4
   speed: 3
-  maxIdleTime: 5
-  bottomLeft: {x: -9, y: -5}
-  topRight: {x: 9, y: 5}
+  maxIdleTime: 1
+  minIdleTime: 1
+  bottomLeft: {x: -8, y: -4}
+  topRight: {x: 8, y: 4}
 --- !u!114 &2095086269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3839,6 +3840,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
+      propertyPath: triggerables.Array.data[7].offset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
       propertyPath: triggerables.Array.data[0].triggerableGameObject
       value: 
       objectReference: {fileID: 1086545000}
@@ -3864,6 +3869,10 @@ PrefabInstance:
       objectReference: {fileID: 818601739}
     - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
       propertyPath: triggerables.Array.data[6].triggerableGameObject
+      value: 
+      objectReference: {fileID: 1152868999}
+    - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
+      propertyPath: triggerables.Array.data[7].triggerableGameObject
       value: 
       objectReference: {fileID: 1152868999}
     m_RemovedComponents: []

@@ -10,11 +10,13 @@ namespace F4B1.Audio
         public AudioClip clip;
         public AudioMixerGroup outputAudioMixerGroup;
         [Range(0f, 1f)]public float volume = 1f;
-
+        public bool dontDestroyOnLoad;
+        
         [HideInInspector] public bool randomlyPitchSound;
         [HideInInspector] public Vector2 pitchBounds = Vector2.one;
     }
     
+    # if UNITY_EDITOR
     [CustomEditor(typeof(Sound))]
     public class MyScriptEditor : Editor
     {
@@ -32,4 +34,5 @@ namespace F4B1.Audio
                 sound.pitchBounds = Vector2.one;
         }
     }
+    #endif
 }

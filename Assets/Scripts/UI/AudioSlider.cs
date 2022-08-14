@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using F4B1.Audio;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -10,12 +12,10 @@ namespace F4B1.UI
     {
 
         [SerializeField] private AudioMixer mixer;
-        private AudioSource _previewSource;
-
-        private void Start()
-        {
-            _previewSource = GetComponentInChildren<AudioSource>();
-        }
+        [SerializeField] private float soundCooldown = .3f;
+        [SerializeField] private SoundEvent playSoundEvent;
+        [SerializeField] private Sound valueChangedSound;
+        private bool _soundAlreadyPlayed;
 
         public void SetMixerVolume(float volume)
         {
@@ -24,8 +24,17 @@ namespace F4B1.UI
             
             volume = Mathf.Log(volume) * 20;
             mixer.SetFloat("volume", volume);
+
+            if (_soundAlreadyPlayed) return;
             
-            if(_previewSource) _previewSource.Play();
+            playSoundEvent.Raise(valueChangedSound);
+            _soundAlreadyPlayed = true;
+            Invoke(nameof(ResetSoundCooldown), soundCooldown);
+        }
+
+        private void ResetSoundCooldown()
+        {
+            _soundAlreadyPlayed = false;
         }
         
     }

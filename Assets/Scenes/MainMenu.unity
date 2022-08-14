@@ -336,6 +336,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1884571047283698764, guid: 13bdee4abef707c46a09dcac8ce6ffcf, type: 3}
+      propertyPath: m_text
+      value: GOLF, yes?
+      objectReference: {fileID: 0}
     - target: {fileID: 6512590106338209918, guid: 13bdee4abef707c46a09dcac8ce6ffcf, type: 3}
       propertyPath: m_Camera
       value: 

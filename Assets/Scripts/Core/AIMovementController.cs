@@ -18,6 +18,7 @@ namespace F4B1.Core
 
         [Header("Borders")] 
         [SerializeField] private float maxIdleTime;
+        [SerializeField] private float minIdleTime;
         [SerializeField] private Vector2 bottomLeft;
         [SerializeField] private Vector2 topRight;
         
@@ -49,7 +50,12 @@ namespace F4B1.Core
 
 
             LeanTween.move(gameObject, path, distance / speed);
-            yield return new WaitForSeconds((distance / speed) + maxIdleTime);
+            yield return new WaitForSeconds((distance / speed));
+
+            var idleTime = Random.Range(minIdleTime, maxIdleTime);
+            LeanTween.move(gameObject, (Vector3)endPos + RandomVector(1), idleTime).setEase(LeanTweenType.easeShake);
+            
+            yield return new WaitForSeconds(idleTime);
 
             StartCoroutine(nameof(MoveToRandomPosition));
         }
@@ -66,19 +72,19 @@ namespace F4B1.Core
 
         private static LTBezierPath CreateBezierPath(Vector3 startPos, Vector3 endPos)
         {
-            var offsetStart = RandomVector();
-            var offsetEnd = RandomVector();
+            var offsetStart = RandomVector(5);
+            var offsetEnd = RandomVector(5);
             
             var pts = new []{ startPos, endPos + offsetEnd, startPos + offsetStart, 
                           endPos};
             return new LTBezierPath(pts);
         }
         
-        private static Vector3 RandomVector()
+        private static Vector3 RandomVector(float maxMagnitude)
         {
-            var x = Random.Range(-5, 5);
-            var y = Random.Range(-5, 5);
-            var z = Random.Range(-5, 5);
+            var x = Random.Range(-maxMagnitude, maxMagnitude);
+            var y = Random.Range(-maxMagnitude, maxMagnitude);
+            var z = Random.Range(-maxMagnitude, maxMagnitude);
             return new Vector3(x, y, z);
         }
 

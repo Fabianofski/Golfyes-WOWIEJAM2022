@@ -340,6 +340,9 @@ MonoBehaviour:
   emotionImage: {fileID: 9012630112929117147}
   playSoundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
   aiTalking: {fileID: 11400000, guid: d2a4f35d3ba424d4eadb0a142a9c09c1, type: 2}
+  talkingSounds:
+  - {fileID: 11400000, guid: 9d0ee8d421e8c764183e9bf25fceef87, type: 2}
+  - {fileID: 11400000, guid: 74e575094993ffe4aa9fc96b5f7ff918, type: 2}
 --- !u!114 &9012630113378166550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,8 +543,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 70fc65757f50410459bd4c195103aa76, type: 2}
+  m_sharedMaterial: {fileID: -4919173618204464387, guid: 70fc65757f50410459bd4c195103aa76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

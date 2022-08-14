@@ -25,7 +25,7 @@ namespace F4B1.UI
             volume = Mathf.Log(volume) * 20;
             mixer.SetFloat("volume", volume);
 
-            if (_soundAlreadyPlayed) return;
+            if (_soundAlreadyPlayed || !valueChangedSound) return;
             
             playSoundEvent.Raise(valueChangedSound);
             _soundAlreadyPlayed = true;

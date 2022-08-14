@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: mixer
       value: 
       objectReference: {fileID: 24100000, guid: 9a5b1147c0883564fb0f408305b0093c, type: 2}
+    - target: {fileID: 6857057635525809214, guid: d96e51312ee149547984e64f8bbea307, type: 3}
+      propertyPath: valueChangedSound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6857057635525809215, guid: d96e51312ee149547984e64f8bbea307, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

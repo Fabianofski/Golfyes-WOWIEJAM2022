@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 using Atoms.Generated;
 using UnityAtoms.BaseAtoms;
@@ -18,6 +19,11 @@ namespace F4B1.Core.Triggerable
         [SerializeField] private bool triggerOnStart;
         [SerializeField] private bool triggerOnStrokeEnd;
         [SerializeField] private bool triggerOnStroke;
+        [SerializeField] private IntVariable strokes;
+        [SerializeField] private bool triggerOnCertainStrokes;
+        [SerializeField] private int[] triggerOnStrokes;
+        [SerializeField] private int triggerEveryXStroke = 1;
+        [SerializeField] private int minimumStrokes = 0;
         private bool _ballInTrigger;
 
         private void Start()
@@ -41,6 +47,10 @@ namespace F4B1.Core.Triggerable
 
         private void TriggerAllTriggerables()
         {
+            if (triggerOnCertainStrokes && !triggerOnStrokes.Contains(strokes.Value)) return;
+            if (strokes.Value % triggerEveryXStroke != 0) return;
+            if (strokes.Value < minimumStrokes) return;
+            
             foreach (var t in triggerables)
                 t.triggerableGameObject.GetComponent<ITriggerable>().Trigger(t.offset);
             foreach (var dialogue in dialogues)

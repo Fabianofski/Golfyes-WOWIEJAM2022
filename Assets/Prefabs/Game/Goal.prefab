@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5304407342500182}
   - component: {fileID: 5304407342500169}
   - component: {fileID: 5304407342500168}
+  - component: {fileID: 5512689935546930161}
+  - component: {fileID: 6292146422501034855}
+  - component: {fileID: 8984638300491226393}
   m_Layer: 8
   m_Name: Flag
   m_TagString: Untagged
@@ -105,6 +108,72 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5512689935546930161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304407342500183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3bba33ea03a2ba44b1efb734413a981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opacity: 0.4
+  levelIsComplete: {fileID: 11400000, guid: 365a9d9650726274d8b04fa16d6a35d0, type: 2}
+--- !u!61 &6292146422501034855
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304407342500183}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.021096244, y: 1.4875122}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.25, y: 0.177}
+    oldSize: {x: 2, y: 3}
+    newSize: {x: 2, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5812926, y: 1.9629753}
+  m_EdgeRadius: 0
+--- !u!61 &8984638300491226393
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304407342500183}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.73765147, y: 1.9520129}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.25, y: 0.177}
+    oldSize: {x: 2, y: 3}
+    newSize: {x: 2, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8477505, y: 1.0339739}
+  m_EdgeRadius: 0
 --- !u!1 &5304408716134339
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballSpeedThreshold: 8
-  ballDistanceThreshold: 0.25
+  ballDistanceThreshold: 0.3
   levelIsCompleted: {fileID: 11400000, guid: 365a9d9650726274d8b04fa16d6a35d0, type: 2}
   ballScaleTweenType: 36
   ballScaleTweenDuration: 0.5
@@ -214,6 +283,9 @@ MonoBehaviour:
   goalPositions:
   - {fileID: 0}
   - {fileID: 0}
+  playSoundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
+  ballInHoleSound: {fileID: 11400000, guid: 4252259c46bb30948882d3b0a372412f, type: 2}
+  ballOverHoleSound: {fileID: 11400000, guid: b318694bae6db4e43ae3e98e13ab60cd, type: 2}
 --- !u!58 &5304408716134340
 CircleCollider2D:
   m_ObjectHideFlags: 0

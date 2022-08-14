@@ -149,11 +149,11 @@ RectTransform:
   m_Father: {fileID: 994002648705489325}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -511, y: 319}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -511.04034, y: 0}
+  m_SizeDelta: {x: 257.9193, y: 152.0484}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1947259213
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -182,17 +182,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0 Strokes
+  m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 70fc65757f50410459bd4c195103aa76, type: 2}
+  m_sharedMaterial: {fileID: -4919173618204464387, guid: 70fc65757f50410459bd4c195103aa76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.227451, g: 0.7725491, b: 0.25490198, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -209,14 +209,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -263,7 +263,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be1790b3aee846479bd22ef3c7bce09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit: Strokes
+  unit: 
+  tweenType: 8
+  tweenDuration: 0.3
+  endStrokes: 10
+  strokes: {fileID: 11400000, guid: 68c84704e72dead43a1593348c2c78ed, type: 2}
+  firstColor: {r: 0.22915626, g: 0.7735849, b: 0.25546476, a: 1}
+  endColor: {r: 0.8207547, g: 0.15021354, b: 0.15021354, a: 1}
 --- !u!114 &1947259214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,7 +442,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0

@@ -25,9 +25,13 @@ namespace F4B1.Core
         private Vector2 _dragStartPos;
         private bool _dragging;
         [SerializeField] private BoolVariable ballIsStill;
+        private Material _material;
+        [SerializeField] private float rollSpeed;
 
         private void Awake()
         {
+            _material = GetComponentInChildren<MeshRenderer>().material;
+            Debug.Log(_material.name);
             _rb2d = GetComponent<Rigidbody2D>();
         }
 
@@ -43,8 +47,14 @@ namespace F4B1.Core
         {
             ballIsStill.Value = _rb2d.velocity.magnitude < .1f;
             if (_dragging && ballIsStill.Value) DrawPowerLine();
+            if(!ballIsStill.Value) RollBallMaterial();
         }
 
+        private void RollBallMaterial()
+        {
+            _material.mainTextureOffset -= _rb2d.velocity * (Time.deltaTime * rollSpeed);
+        }
+        
         private void DrawPowerLine()
         {
             var distance = Vector2.Distance(_dragStartPos, _mousePos);

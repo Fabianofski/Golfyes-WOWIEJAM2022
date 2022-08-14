@@ -51,6 +51,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 676bf677f72a83c4ead65c84a30c23e7, type: 2}
   - {fileID: 11400000, guid: 9bfb533fcfdd86140891d3e4315418c6, type: 2}
   oneTimeTrigger: 1
+  triggerOnZoneEnter: 1
+  triggerOnStart: 0
+  triggerOnStrokeEnd: 0
+  triggerOnStroke: 0
 --- !u!61 &7813343793798586050
 BoxCollider2D:
   m_ObjectHideFlags: 0

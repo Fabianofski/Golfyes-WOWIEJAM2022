@@ -16,6 +16,7 @@ namespace F4B1.Core
         [SerializeField] private float dragLength;
         [SerializeField] private float shootPower;
         [SerializeField] private IntVariable strokes;
+        [SerializeField] private Vector2 lastPos;
         
         [SerializeField] private FloatVariable dragPower;
         private Vector2 _dir;
@@ -57,6 +58,13 @@ namespace F4B1.Core
             if(!ballIsStill.Value) RollBallMaterial();
         }
 
+        public void ResetToLastPosition()
+        {
+            var trans = transform;
+            trans.localScale = Vector3.one;
+            trans.position = lastPos;
+        }
+        
         private void RollBallMaterial()
         {
             _material.mainTextureOffset -= _rb2d.velocity * (Time.deltaTime * rollSpeed);
@@ -82,6 +90,7 @@ namespace F4B1.Core
 
             if (value.isPressed)
             {
+                lastPos = transform.position;
                 arrowTransform.localScale = Vector3.one;
                 _dragStartPos = _mousePos;
                 _dragging = true;

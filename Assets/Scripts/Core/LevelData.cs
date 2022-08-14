@@ -7,7 +7,7 @@ namespace F4B1.Core
     {
         public int levelID;
         public int par;
-        private int _strokeSession;
+        private int _strokeSession = -1;
         public int StrokeSession
         {
             get { return _strokeSession;}
@@ -19,5 +19,10 @@ namespace F4B1.Core
             }
         }
         public int StrokeHighScore { get; private set; }
+
+        public void ResetStrokeSession()
+        {
+            _strokeSession = -1;
+        }
     }
 }

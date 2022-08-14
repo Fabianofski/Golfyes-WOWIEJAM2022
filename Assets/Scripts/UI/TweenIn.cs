@@ -20,20 +20,20 @@ namespace F4B1.UI
             TweenChildren(transform, delay);
         }
 
-        private void TweenChildren(Transform trans, float delay)
+        private void TweenChildren(Transform trans, float d)
         {
             for (int i = 0; i < trans.childCount; i++)
             {
-                if(trans.GetChild(i).childCount > 0) TweenChildren(trans.GetChild(i), delay);
-                TweenGameObject(trans.GetChild(i).gameObject, i * delay);
+                if(trans.GetChild(i).childCount > 0) TweenChildren(trans.GetChild(i), d);
+                TweenGameObject(trans.GetChild(i).gameObject, i * d);
             }
         }
 
-        private void TweenGameObject(GameObject go, float delay)
+        private void TweenGameObject(GameObject go, float d)
         {
             go.transform.localScale = Vector3.zero;
             raiseSoundEvent.Raise(wooshSound);
-            LeanTween.scale(go, Vector3.one, tweenDuration).setEase(scaleTweenType).setDelay(delay);
+            LeanTween.scale(go, Vector3.one, tweenDuration).setEase(scaleTweenType).setDelay(d);
         }
     }
 }

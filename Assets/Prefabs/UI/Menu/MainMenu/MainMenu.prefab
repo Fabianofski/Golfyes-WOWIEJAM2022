@@ -52,9 +52,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b52f9e96a05a488e94bdfcee17ce36f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  raiseSoundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
+  wooshSound: {fileID: 11400000, guid: a6225e476d2299d498c4df971e23ca2b, type: 2}
   scaleTweenType: 2
   tweenDuration: 0.3
-  delay: 0.2
+  delay: 0.05
 --- !u!1001 &1984757127488377178
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 1258e62f5c3cdd142baf580556cba593, type: 3}
   outputAudioMixerGroup: {fileID: 24300002, guid: 71019aa9703cd684e9dee59de8d8c6d8, type: 2}
-  volume: 1
+  volume: 0.5
   dontDestroyOnLoad: 0
   randomlyPitchSound: 1
-  pitchBounds: {x: 0.9, y: 1.2}
+  pitchBounds: {x: 1.2, y: 1.6}

@@ -1,4 +1,6 @@
 ﻿using System;
+using F4B1.Audio;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
 namespace F4B1.UI
@@ -6,6 +8,8 @@ namespace F4B1.UI
     public class TweenIn : MonoBehaviour
     {
 
+        [SerializeField] private SoundEvent raiseSoundEvent;
+        [SerializeField] private Sound wooshSound;
         [SerializeField] private LeanTweenType scaleTweenType = LeanTweenType.easeOutQuad;
         [SerializeField] private float tweenDuration = .3f;
         [SerializeField] private float delay = 0.02f;
@@ -28,6 +32,7 @@ namespace F4B1.UI
         private void TweenGameObject(GameObject go, float delay)
         {
             go.transform.localScale = Vector3.zero;
+            raiseSoundEvent.Raise(wooshSound);
             LeanTween.scale(go, Vector3.one, tweenDuration).setEase(scaleTweenType).setDelay(delay);
         }
     }

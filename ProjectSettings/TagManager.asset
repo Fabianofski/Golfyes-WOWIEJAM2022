@@ -61,3 +61,6 @@ TagManager:
   - name: Flag
     uniqueID: 3544987085
     locked: 0
+  - name: WorldCanvas
+    uniqueID: 1233604209
+    locked: 0

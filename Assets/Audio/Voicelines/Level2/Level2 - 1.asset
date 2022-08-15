@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "But I\u2019ve been trained on thousands of games, and in all of
     them..."
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: effc90c1b95b939499c857c0ca02bed7, type: 2}
   robotEmotion: {fileID: -1059224503, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

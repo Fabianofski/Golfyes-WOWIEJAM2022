@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level3 - 2
   m_EditorClassIdentifier: 
   dialogueText: ...which will give you a LOT of points!
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 7e792ca504803e74b987fb716961b7fc, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

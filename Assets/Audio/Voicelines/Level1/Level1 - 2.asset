@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level1 - 2
   m_EditorClassIdentifier: 
   dialogueText: But no worries! My training algorithm is VERY fast.
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 539daf25680b68a4b8f2e51d5ae40ea7, type: 2}
   robotEmotion: {fileID: -1686763220, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

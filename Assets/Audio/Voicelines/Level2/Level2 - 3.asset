@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level2 - 3
   m_EditorClassIdentifier: 
   dialogueText: "So this... \u2018golf\u2019 thing, it must be the same!"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: d1ce257681aab70478cea34fb66406c5, type: 2}
   robotEmotion: {fileID: -602303336, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

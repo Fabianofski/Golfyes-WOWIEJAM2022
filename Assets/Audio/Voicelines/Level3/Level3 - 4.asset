@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level3 - 4
   m_EditorClassIdentifier: 
   dialogueText: Oops, one second, just moving this over here!
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 30e2e2631851cb5489f868376b556a61, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

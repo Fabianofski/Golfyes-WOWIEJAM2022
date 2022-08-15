@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level2 - 6
   m_EditorClassIdentifier: 
   dialogueText: "You would\u2019ve gotten almost no points at all!"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 24c9bd3502db65247a7f123177542184, type: 2}
   robotEmotion: {fileID: 2053549865, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

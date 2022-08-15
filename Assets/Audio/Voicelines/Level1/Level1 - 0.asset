@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level1 - 0
   m_EditorClassIdentifier: 
   dialogueText: Oh hi there! I will be your guide through this game!
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: a769d0ed14f6bde40b8889b577b3a6df, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

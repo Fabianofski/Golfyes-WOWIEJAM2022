@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level2 - 4
   m_EditorClassIdentifier: 
   dialogueText: "I\u2019ll help you get a bunch of points!"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: de1e6745a5619d842a80c78960b83dee, type: 2}
   robotEmotion: {fileID: -1058944830, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

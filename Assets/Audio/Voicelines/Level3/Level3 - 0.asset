@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level3 - 0
   m_EditorClassIdentifier: 
   dialogueText: Oh, here we go! This sand will slow you down!
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: d5d3da8389578db46b24fe44c2bc76c6, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

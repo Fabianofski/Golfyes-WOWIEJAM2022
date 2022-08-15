@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "OK, to start with, I think you have to get that... \u2018ball\u2019...
     in that \u2018hole\u2019."
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 066250af66bae7142945669293d798d4, type: 2}
   robotEmotion: {fileID: -1058944830, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

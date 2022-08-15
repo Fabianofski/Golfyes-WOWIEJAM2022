@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "That\u2019s more like it!"
   voiceLine: {fileID: 11400000, guid: b4749c29f3462ff488016a19b0d8be82, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: 1615425605, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: Wait, over here. This counter.
   voiceLine: {fileID: 11400000, guid: 40da2cc383dea0040a527c498f34814f, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: 2053549865, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

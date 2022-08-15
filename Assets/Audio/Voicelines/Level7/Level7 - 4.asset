@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: Whoops, sorry. Old habits die hard, I guess.
   voiceLine: {fileID: 11400000, guid: 8950bcd7a35791f47ad248c838511fe5, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: 1300170422, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

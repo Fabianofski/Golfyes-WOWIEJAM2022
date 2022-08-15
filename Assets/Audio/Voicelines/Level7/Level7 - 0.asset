@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "OK, I\u2019ve been thinking about the points thing."
   voiceLine: {fileID: 11400000, guid: 29d5393ee41e9cc40a177ea6eea3a22f, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: -602303336, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

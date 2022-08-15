@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: According to my training data, collectables improve EVERY game!
   voiceLine: {fileID: 11400000, guid: da1b8c52bdb62f649906a3cb90d33391, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: -602303336, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

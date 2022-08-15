@@ -15,4 +15,4 @@ MonoBehaviour:
   dialogueText: "No offense, but it\u2019s almost as if you\u2019re trying to get
     a low score!"
   voiceLine: {fileID: 11400000, guid: 394287d2ed473e846b61291c586de4c6, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: 1469119581, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

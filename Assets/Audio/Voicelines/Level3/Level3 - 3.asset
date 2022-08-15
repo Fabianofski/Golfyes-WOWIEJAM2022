@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: No need to thank me!
   voiceLine: {fileID: 11400000, guid: 7c48904a4565bd04aa739ff3ee81a1c9, type: 2}
-  robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: 1615425605, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

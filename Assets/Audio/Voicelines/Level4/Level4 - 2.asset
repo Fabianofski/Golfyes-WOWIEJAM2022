@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "Ah... I\u2019m just not feeling it!"
   voiceLine: {fileID: 11400000, guid: f0b04ad2f4df5ac41a7550a2ed8f29bf, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: -153808879, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

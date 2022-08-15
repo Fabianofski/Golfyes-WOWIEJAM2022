@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "Player, why didn\u2019t you tell me?!"
   voiceLine: {fileID: 11400000, guid: 7c2fe383d404a1d41b2d6ab180bfb5fc, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: -1362788185, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

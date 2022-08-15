@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "Maybe this... \u2018golf\u2019 game has a different scoring system?"
   voiceLine: {fileID: 11400000, guid: ff1db68833a17e942a36083ec759fb6b, type: 2}
-  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}
+  robotEmotion: {fileID: 1300170422, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

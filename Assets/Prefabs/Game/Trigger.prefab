@@ -48,10 +48,13 @@ MonoBehaviour:
   triggerables: []
   dialogueEvent: {fileID: 11400000, guid: 1f202f1b218b58a45a591725d15113df, type: 2}
   dialogues:
-  - {fileID: 11400000, guid: 676bf677f72a83c4ead65c84a30c23e7, type: 2}
-  - {fileID: 11400000, guid: 9bfb533fcfdd86140891d3e4315418c6, type: 2}
+  - {fileID: 11400000, guid: 4d347d3086cdf7040b7b87733a01c623, type: 2}
+  - {fileID: 11400000, guid: 5b6b5aaff4e61564eb0c80c22dd600a0, type: 2}
+  - {fileID: 11400000, guid: 1f0973050f310464da2d0e8a203726ae, type: 2}
+  - {fileID: 11400000, guid: 10784e6bf6e93214185fdbd3d5b5b45f, type: 2}
+  - {fileID: 11400000, guid: fd6b9eefc6cb87c439ed67ded1df28f9, type: 2}
   oneTimeTrigger: 1
-  triggerOnZoneEnter: 1
+  triggerOnZoneEnter: 0
   triggerOnStart: 0
   triggerOnStrokeEnd: 0
   triggerOnStroke: 0

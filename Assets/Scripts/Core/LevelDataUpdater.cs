@@ -16,7 +16,8 @@ namespace F4B1.Core
         {
             if (!levelIsComplete) return;
 
-            levelData.StrokeSession = strokes.Value;
+            Debug.Log($"Updater: {levelData.strokeSession}");
+            levelData.strokeSession = strokes.Value;
         }
     }
 }

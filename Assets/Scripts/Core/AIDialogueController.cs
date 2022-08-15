@@ -7,6 +7,7 @@ using TMPro;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -25,14 +26,36 @@ namespace F4B1.Core
         private Queue<Dialogue> _dialogueQueue;
         private float _timePerChar;
         [SerializeField] private BoolVariable aiTalking;
+        [SerializeField] private float defaultTimePerChar = 0.05f;
+        [SerializeField] private InputAction skipDialogueAction;
+
         
         [Header("Sound")] 
         [SerializeField] private Sound[] talkingSounds;
 
 
-        private void Start()
+        private void Awake()
         {
             _dialogueQueue = new Queue<Dialogue>();
+            skipDialogueAction.performed += _ => OnSkip();
+        }
+
+        void OnEnable()
+        {
+            skipDialogueAction.Enable();
+        }
+
+        void OnDisable()
+        {
+            skipDialogueAction.Disable();
+        }
+
+        private void OnSkip()
+        {
+            StopCoroutine(DisplayNextCharacter());
+            _characterQueue.Clear();
+            if(_dialogueQueue.Count > 0) FillCharQueue();
+            else StopDialogue();
         }
 
         public void PlayDialogue(Dialogue dialogue)
@@ -50,10 +73,10 @@ namespace F4B1.Core
             
             foreach (var character in dialogue.dialogueText)
                 _characterQueue.Enqueue(character);
-            _timePerChar = dialogue.voiceLine.clip.length / _characterQueue.Count;
+            _timePerChar = dialogue.voiceLine ? dialogue.voiceLine.clip.length / _characterQueue.Count : defaultTimePerChar;
 
             StopAllCoroutines();
-            playSoundEvent.Raise(dialogue.voiceLine);
+            if (dialogue.voiceLine) playSoundEvent.Raise(dialogue.voiceLine);
             emotionImage.sprite = dialogue.robotEmotion;
             StartCoroutine(nameof(DisplayNextCharacter));
         }
@@ -75,11 +98,15 @@ namespace F4B1.Core
             else
             {
                 yield return new WaitForSeconds(1f);
-                
-                aiTalking.Value = false;
-                dialogueText.text = "";
-                LeanTween.scale(speechBubble, Vector3.zero, .3f).setEase(speechBubbleTweenType);
+                StopDialogue();
             }
+        }
+
+        private void StopDialogue()
+        {
+            aiTalking.Value = false;
+            dialogueText.text = "";
+            LeanTween.scale(speechBubble, Vector3.zero, .3f).setEase(speechBubbleTweenType);
         }
         
     }

@@ -14,9 +14,11 @@ namespace F4B1.UI
         
         public void UpdateData(LevelData data)
         {
+            Debug.Log($"Content: hole:{data.levelID} par: {data.par} score: {data.strokeSession}");
+            
             hole.text = data.levelID + "";
             par.text = data.par + "";
-            score.text = data.StrokeSession == -1 ? "-" : data.StrokeSession + "";
+            score.text = data.strokeSession == -1 ? "-" : data.strokeSession + "";
         }
         
     }

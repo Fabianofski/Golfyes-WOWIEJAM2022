@@ -39,7 +39,7 @@ namespace F4B1.Core.Triggerable
         
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (_ballInTrigger || !triggerOnZoneEnter) return;
+            if (_ballInTrigger || !triggerOnZoneEnter || !col.CompareTag("Ball")) return;
             _ballInTrigger = true;
 
             TriggerAllTriggerables();

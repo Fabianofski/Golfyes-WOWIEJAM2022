@@ -20,6 +20,7 @@ namespace F4B1.UI
             
             foreach (var data in levelDataList.List)
             {
+                Debug.Log($"Spawner: hole:{data.levelID} par: {data.par} score: {data.strokeSession}");
                 var go = Instantiate(levelDataPrefab, container);
                 go.GetComponent<LevelDataUIUpdater>().UpdateData(data);
             }

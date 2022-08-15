@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - JukeBox
+  - BallTrigger
   layers:
   - Default
   - TransparentFX

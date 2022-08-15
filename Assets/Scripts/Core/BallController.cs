@@ -28,6 +28,7 @@ namespace F4B1.Core
         [SerializeField] private BoolVariable ballIsStill;
         [SerializeField] private BoolVariable levelIsComplete;
         [SerializeField] private BoolVariable gameIsPaused;
+        [SerializeField] private BoolVariable aiTalking;
         private Material _material;
         [SerializeField] private float rollSpeed;
 
@@ -86,7 +87,7 @@ namespace F4B1.Core
 
         public void OnClick(InputValue value)
         {
-            if (!ballIsStill.Value || gameIsPaused.Value || levelIsComplete.Value) return;
+            if (!ballIsStill.Value || gameIsPaused.Value || levelIsComplete.Value || aiTalking.Value) return;
 
             if (value.isPressed)
             {

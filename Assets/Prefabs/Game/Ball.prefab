@@ -394,6 +394,9 @@ MonoBehaviour:
   gameIsPaused: {fileID: 11400000, guid: f85b82cdd999f924ab81d3f0ddc0eecc, type: 2}
   aiTalking: {fileID: 11400000, guid: d2a4f35d3ba424d4eadb0a142a9c09c1, type: 2}
   rollSpeed: 1
+  sandShootDamper: 0.8
+  dragOnSand: 4
+  dragOnGrass: 2
   playSoundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
   ballHitsWallSound: {fileID: 11400000, guid: b318694bae6db4e43ae3e98e13ab60cd, type: 2}
   soundDamper: 3

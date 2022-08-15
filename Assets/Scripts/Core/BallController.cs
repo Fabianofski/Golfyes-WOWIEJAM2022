@@ -31,6 +31,12 @@ namespace F4B1.Core
         [SerializeField] private BoolVariable aiTalking;
         private Material _material;
         [SerializeField] private float rollSpeed;
+        
+        [Header("Sand")]
+        private bool _onSand;
+        [SerializeField] private float sandShootDamper;
+        [SerializeField] private float dragOnSand;
+        [SerializeField] private float dragOnGrass;
 
         [Header("Sound")] 
         [SerializeField] private SoundEvent playSoundEvent;
@@ -48,7 +54,8 @@ namespace F4B1.Core
         {
             if (!ballIsStill.Value || dragPower.Value < .1f) return;
             strokes.Value++;
-            _rb2d.AddForce(MathF.Pow(dragPower.Value, 2) * _dir * shootPower, ForceMode2D.Impulse);
+            var modifier = _onSand ? sandShootDamper : 1;
+            _rb2d.AddForce(MathF.Pow(dragPower.Value, 2) * _dir * shootPower * modifier, ForceMode2D.Impulse);
             dragPower.Value = 0;
         }
 
@@ -114,6 +121,13 @@ namespace F4B1.Core
         {
             ballHitsWallSound.volume = Math.Min(1, Mathf.Sqrt(Mathf.Abs(_rb2d.velocity.magnitude)) / soundDamper);
             playSoundEvent.Raise(ballHitsWallSound);
+        }
+
+        public void SandGroundChanged(bool onSand)
+        {
+            _onSand = onSand;
+
+            _rb2d.drag = _onSand ? dragOnSand : dragOnGrass;
         }
     }
 }

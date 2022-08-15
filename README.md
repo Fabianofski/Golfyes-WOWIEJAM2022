@@ -25,15 +25,3 @@ To open the project do the following:
    git clone https://github.com/Fabianofski/WOWIEJAM2022.git
    ```
 4. Open the Project in Unity Hub
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()

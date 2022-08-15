@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: Sorry, I could just tell you were going to get a low score with that
     shot.
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 762daf2750ad00b4baa6de76e0fb935a, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

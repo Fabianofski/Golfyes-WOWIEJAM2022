@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level8 - 1
   m_EditorClassIdentifier: 
   dialogueText: ...it gets redder the more points you get?
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: c670b6a0c2df694428252e1ec39207fb, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

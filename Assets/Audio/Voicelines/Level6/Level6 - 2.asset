@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "Ack, sorry. It\u2019s just... why would you want to get the lowest
     score possible?"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 9bd1c9c33c2ff0842bb454c25aaa71e8, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

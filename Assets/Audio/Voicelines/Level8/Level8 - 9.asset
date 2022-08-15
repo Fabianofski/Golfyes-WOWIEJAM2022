@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level8 - 9
   m_EditorClassIdentifier: 
   dialogueText: Never judge a book by its cover...
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 5e566ef1ffee0584cb53d4c9fe246f8a, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

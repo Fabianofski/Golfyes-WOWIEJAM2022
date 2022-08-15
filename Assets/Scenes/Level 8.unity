@@ -738,7 +738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
       propertyPath: dialogues.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
       propertyPath: dialogues.Array.data[0]
@@ -747,7 +747,11 @@ PrefabInstance:
     - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
       propertyPath: dialogues.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: a5751eeae8cf501458cde084ba06eda6, type: 2}
+      objectReference: {fileID: 11400000, guid: 2c9c42a22c96a894ca12af273dd3f37a, type: 2}
+    - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
+      propertyPath: dialogues.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b96fd43b7cc0264fb1ca4314606d6e6, type: 2}
     - target: {fileID: 7813343793798586053, guid: 8b6ebbf75a475034caa56ae99d04974c, type: 3}
       propertyPath: triggerables.Array.size
       value: 1

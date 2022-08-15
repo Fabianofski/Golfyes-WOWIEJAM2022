@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level8 - 2
   m_EditorClassIdentifier: 
   dialogueText: "I didn\u2019t see that! I\u2019m colourblind!"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 8f9d22209146ba346b87690b8670edf7, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

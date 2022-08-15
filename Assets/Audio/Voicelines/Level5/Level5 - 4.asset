@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level5 - 4
   m_EditorClassIdentifier: 
   dialogueText: "I\u2019m just trying to help, you know?"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 95d3bc109236bc145b302ea3b2bfaec4, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

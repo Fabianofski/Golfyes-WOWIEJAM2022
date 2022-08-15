@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: LevelData 2
   m_EditorClassIdentifier: 
   levelID: 2
-  par: 2
+  par: 3
+  strokeSession: -1

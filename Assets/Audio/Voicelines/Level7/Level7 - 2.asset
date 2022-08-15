@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "It doesn\u2019t fit with any of my data, but I can\u2019t think
     of any other explanation."
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 4394f3129ddbc7845a7e3e95c8c009a1, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: OK, I made this one from scratch to optimise the number of points
     you can get!
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 3fa7593149d8ee14f8c114ecaed90030, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

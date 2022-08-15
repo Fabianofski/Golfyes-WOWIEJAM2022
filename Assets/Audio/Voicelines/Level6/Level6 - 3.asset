@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level6 - 3
   m_EditorClassIdentifier: 
   dialogueText: "Eh, doesn\u2019t matter. You do you, friend!"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: 869cc0431a8defe4b9503f2939c5659b, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level8 - 7
   m_EditorClassIdentifier: 
   dialogueText: "You should\u2019ve said something sooner!"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: e31a40c750d436743856b68aa80ed23a, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

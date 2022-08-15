@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level6 - 1
   m_EditorClassIdentifier: 
   dialogueText: "Since you don\u2019t want to cooperate..."
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 11400000, guid: ef89bd462640c6a44bb3951a23c1e39e, type: 2}
   robotEmotion: {fileID: 1004634706, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

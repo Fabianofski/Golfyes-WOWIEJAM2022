@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strokes: {fileID: 11400000, guid: 68c84704e72dead43a1593348c2c78ed, type: 2}
-  coinAmount: 2
+  coinAmount: 1
 --- !u!212 &2511321664599636421
 SpriteRenderer:
   m_ObjectHideFlags: 0

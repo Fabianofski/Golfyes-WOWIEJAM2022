@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c79dbf2840c4f68ba4403c9247f0779, type: 3}
-  m_Name: LevelData 10
+  m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
+  m_Name: Level5 - 4
   m_EditorClassIdentifier: 
-  levelID: 10
-  par: 2
+  dialogueText: "I\u2019m just trying to help, you know?"
+  voiceLine: {fileID: 0}
+  robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

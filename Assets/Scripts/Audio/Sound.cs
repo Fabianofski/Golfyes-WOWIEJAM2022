@@ -11,7 +11,8 @@ namespace F4B1.Audio
         public AudioMixerGroup outputAudioMixerGroup;
         [Range(0f, 1f)]public float volume = 1f;
         public bool dontDestroyOnLoad;
-        
+
+        public bool destroySoundOnEvent;
         [HideInInspector] public bool randomlyPitchSound;
         [HideInInspector] public Vector2 pitchBounds = Vector2.one;
     }

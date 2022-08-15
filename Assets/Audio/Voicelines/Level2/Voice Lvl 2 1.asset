@@ -16,5 +16,6 @@ MonoBehaviour:
   outputAudioMixerGroup: {fileID: 24300002, guid: 71019aa9703cd684e9dee59de8d8c6d8, type: 2}
   volume: 0.8
   dontDestroyOnLoad: 0
+  destroySoundOnEvent: 1
   randomlyPitchSound: 0
   pitchBounds: {x: 1, y: 1}

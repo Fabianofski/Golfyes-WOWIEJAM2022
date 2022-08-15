@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232351b71eb75ac4e923d92e6e8dab4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroySoundEvent: {fileID: 11400000, guid: f4e28d4a89cb3de40be0eb887469409e, type: 2}
 --- !u!114 &6968147999201166137
 MonoBehaviour:
   m_ObjectHideFlags: 0

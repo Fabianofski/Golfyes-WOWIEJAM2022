@@ -32,6 +32,7 @@ namespace F4B1.Core
         
         [Header("Sound")] 
         [SerializeField] private Sound[] talkingSounds;
+        [SerializeField] private VoidEvent destroySoundEvent;
 
 
         private void Awake()
@@ -53,6 +54,7 @@ namespace F4B1.Core
         private void OnSkip()
         {
             StopCoroutine(DisplayNextCharacter());
+            destroySoundEvent.Raise();
             _characterQueue.Clear();
             if(_dialogueQueue.Count > 0) FillCharQueue();
             else StopDialogue();

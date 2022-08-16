@@ -1,4 +1,4 @@
-# WOWIE JAM 2022
+# Golf, yes? - WOWIE JAM 2022
  
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -15,7 +15,7 @@ This game will be made for the [WOWIE JAM 4.0](https://itch.io/jam/wowie-jam-4) 
 ## Getting Started
 
 If you want to try out the game you can play it in web or download it for Mac, Windows or Linux right here:<br/>
-"Insert Link here"
+[https://f4b1.itch.io/golf-yes](https://f4b1.itch.io/golf-yes)
 
 To open the project do the following:
 1. Install [Unity Hub](https://unity.com/download)

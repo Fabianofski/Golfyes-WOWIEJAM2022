@@ -1,3 +1,9 @@
+// /**
+//  * This file is part of: Golf, yes?
+//  * Copyright (C) 2022 Fabian Friedrich
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -9,15 +15,15 @@ namespace F4B1.Audio
     {
         public AudioClip clip;
         public AudioMixerGroup outputAudioMixerGroup;
-        [Range(0f, 1f)]public float volume = 1f;
+        [Range(0f, 1f)] public float volume = 1f;
         public bool dontDestroyOnLoad;
 
         public bool destroySoundOnEvent;
         [HideInInspector] public bool randomlyPitchSound;
         [HideInInspector] public Vector2 pitchBounds = Vector2.one;
     }
-    
-    # if UNITY_EDITOR
+
+# if UNITY_EDITOR
     [CustomEditor(typeof(Sound))]
     public class MyScriptEditor : Editor
     {
@@ -25,8 +31,8 @@ namespace F4B1.Audio
         {
             base.OnInspectorGUI();
             var sound = target as Sound;
- 
-            
+
+
             sound.randomlyPitchSound = GUILayout.Toggle(sound.randomlyPitchSound, "Randomly Pitch Sound");
 
             if (sound.randomlyPitchSound)
@@ -35,5 +41,5 @@ namespace F4B1.Audio
                 sound.pitchBounds = Vector2.one;
         }
     }
-    #endif
+#endif
 }

@@ -1,5 +1,9 @@
-using System;
-using System.Collections;
+// /**
+//  * This file is part of: Golf, yes?
+//  * Copyright (C) 2022 Fabian Friedrich
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using System.Collections.Generic;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
@@ -25,21 +29,21 @@ namespace F4B1.UI
             pauseInputAction.performed += OnPause;
         }
 
-        void OnEnable()
+        private void OnEnable()
         {
             pauseInputAction.Enable();
         }
 
-        void OnDisable()
+        private void OnDisable()
         {
             pauseInputAction.Disable();
         }
-        
+
         private void OnPause(InputAction.CallbackContext ctx)
         {
             pauseToggled.Value = !pauseToggled.Value;
         }
-        
+
         public void LoadNextScene()
         {
             ResetAtoms();
@@ -65,10 +69,7 @@ namespace F4B1.UI
 
         private void ResetAtoms()
         {
-            foreach (var atom in resetAtoms)
-            {
-                atom.Reset();
-            }
+            foreach (var atom in resetAtoms) atom.Reset();
         }
     }
 }

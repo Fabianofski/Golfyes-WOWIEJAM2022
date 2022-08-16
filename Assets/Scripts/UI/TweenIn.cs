@@ -1,4 +1,9 @@
-﻿using System;
+﻿// /**
+//  * This file is part of: Golf, yes?
+//  * Copyright (C) 2022 Fabian Friedrich
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -7,13 +12,12 @@ namespace F4B1.UI
 {
     public class TweenIn : MonoBehaviour
     {
-
         [SerializeField] private SoundEvent raiseSoundEvent;
         [SerializeField] private Sound wooshSound;
         [SerializeField] private LeanTweenType scaleTweenType = LeanTweenType.easeOutQuad;
         [SerializeField] private float tweenDuration = .3f;
         [SerializeField] private float delay = 0.02f;
-        
+
         private void OnEnable()
         {
             TweenGameObject(gameObject, 0);
@@ -22,9 +26,9 @@ namespace F4B1.UI
 
         private void TweenChildren(Transform trans, float d)
         {
-            for (int i = 0; i < trans.childCount; i++)
+            for (var i = 0; i < trans.childCount; i++)
             {
-                if(trans.GetChild(i).childCount > 0) TweenChildren(trans.GetChild(i), d);
+                if (trans.GetChild(i).childCount > 0) TweenChildren(trans.GetChild(i), d);
                 TweenGameObject(trans.GetChild(i).gameObject, i * d);
             }
         }

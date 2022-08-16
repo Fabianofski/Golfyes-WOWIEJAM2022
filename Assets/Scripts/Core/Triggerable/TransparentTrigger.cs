@@ -1,6 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+// /**
+//  * This file is part of: Golf, yes?
+//  * Copyright (C) 2022 Fabian Friedrich
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -8,7 +11,6 @@ namespace F4B1
 {
     public class TransparentTrigger : MonoBehaviour
     {
-
         [SerializeField] private float opacity = 0.4f;
         [SerializeField] private BoolVariable levelIsComplete;
         private SpriteRenderer _spriteRenderer;
@@ -23,14 +25,14 @@ namespace F4B1
             SetOpacity(opacity);
         }
 
-        private void OnTriggerStay2D(Collider2D other)
-        {
-            if(levelIsComplete.Value) SetOpacity(1);
-        }
-
         private void OnTriggerExit2D(Collider2D other)
         {
             SetOpacity(1);
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            if (levelIsComplete.Value) SetOpacity(1);
         }
 
         public void DisableAnimator()

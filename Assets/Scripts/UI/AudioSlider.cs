@@ -1,6 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+// /**
+//  * This file is part of: Golf, yes?
+//  * Copyright (C) 2022 Fabian Friedrich
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -10,7 +13,6 @@ namespace F4B1.UI
 {
     public class AudioSlider : MonoBehaviour
     {
-
         [SerializeField] private AudioMixer mixer;
         [SerializeField] private float soundCooldown = .3f;
         [SerializeField] private SoundEvent playSoundEvent;
@@ -21,12 +23,12 @@ namespace F4B1.UI
         {
             PlayerPrefs.SetFloat(mixer.name, volume);
             PlayerPrefs.Save();
-            
+
             volume = Mathf.Log(volume) * 20;
             mixer.SetFloat("volume", volume);
 
             if (_soundAlreadyPlayed || !valueChangedSound) return;
-            
+
             playSoundEvent.Raise(valueChangedSound);
             _soundAlreadyPlayed = true;
             Invoke(nameof(ResetSoundCooldown), soundCooldown);
@@ -36,6 +38,5 @@ namespace F4B1.UI
         {
             _soundAlreadyPlayed = false;
         }
-        
     }
 }

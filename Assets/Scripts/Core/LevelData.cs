@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿// /**
+//  * This file is part of: Golf, yes?
+//  * Copyright (C) 2022 Fabian Friedrich
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
+using UnityEngine;
 
 namespace F4B1.Core
 {

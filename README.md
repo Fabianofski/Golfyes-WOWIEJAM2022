@@ -22,6 +22,14 @@ To open the project do the following:
 2. In Unity Hub install Unity Version 2021.3.4f1
 3. Clone the repo
    ```sh
-   git clone https://github.com/Fabianofski/WOWIEJAM2022.git
+   git clone https://github.com/Fabianofski/Golfyes-WOWIEJAM2022.git
    ```
 4. Open the Project in Unity Hub
+
+## License
+
+### Code
+The Unity Project and all scripts are licensed under MIT License. See 'License.md' for more information
+
+### Assets
+Unless mentioned otherwise, all art, sound and music assets are distributed under the [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/) license.

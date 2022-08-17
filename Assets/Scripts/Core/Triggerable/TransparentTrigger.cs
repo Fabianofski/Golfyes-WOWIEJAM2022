@@ -7,7 +7,7 @@
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1
+namespace F4B1.Core.Triggerable
 {
     public class TransparentTrigger : MonoBehaviour
     {

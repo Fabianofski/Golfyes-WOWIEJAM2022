@@ -1,5 +1,5 @@
 using System;
-using Atoms.Generated;
+using F4B1.Core.AI;
 using UnityEngine;
 
 namespace UnityAtoms.BaseAtoms

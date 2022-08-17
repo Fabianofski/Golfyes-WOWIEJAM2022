@@ -1,4 +1,5 @@
 using F4B1.Core;
+using F4B1.UI.Scoreboard;
 using UnityAtoms.Editor;
 using UnityEditor;
 

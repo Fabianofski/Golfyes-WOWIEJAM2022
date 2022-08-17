@@ -6,7 +6,6 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using Atoms.Generated;
 using F4B1.Audio;
 using TMPro;
 using UnityAtoms.BaseAtoms;
@@ -14,7 +13,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace F4B1.Core
+namespace F4B1.Core.AI
 {
     public class AIDialogueController : MonoBehaviour
     {

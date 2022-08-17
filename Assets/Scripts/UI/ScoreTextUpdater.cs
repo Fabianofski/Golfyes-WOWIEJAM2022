@@ -10,14 +10,15 @@ using UnityEngine;
 
 namespace F4B1.UI
 {
-    public class IntTextUpdater : MonoBehaviour
+    public class ScoreTextUpdater : MonoBehaviour
     {
+        [Header("Tweening")]
         [SerializeField] private string unit;
         [SerializeField] private LeanTweenType tweenType;
         [SerializeField] private float tweenDuration;
 
-        [Header("Colors")] [SerializeField] private int endStrokes;
-
+        [Header("Colors")] 
+        [SerializeField] private int endStrokes;
         [SerializeField] private IntVariable strokes;
         [SerializeField] private Color firstColor;
         [SerializeField] private Color endColor;

@@ -4,10 +4,9 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using F4B1.Core;
 using UnityEngine;
 
-namespace F4B1
+namespace F4B1.Core.Ball
 {
     public class SandGround : MonoBehaviour
     {

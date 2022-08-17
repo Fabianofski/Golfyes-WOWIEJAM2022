@@ -5,6 +5,7 @@
 //  **/
 
 using F4B1.Audio;
+using F4B1.Core.Ball;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -12,21 +13,22 @@ namespace F4B1.Core.Triggerable
 {
     public class PitTriggerable : MonoBehaviour, ITriggerable
     {
-        [SerializeField] private LeanTweenType scaleTweenType = LeanTweenType.easeOutQuad;
-        [SerializeField] private float tweenDuration = 1f;
-        [SerializeField] private float ballTweenDuration = .5f;
-
-        [Header("Pit")] [SerializeField] private float ballSpeedThreshold;
-
-        [SerializeField] private BoolVariable levelIsCompleted;
+        [Header("Pit")] 
+        private bool _inPit;
+        private Collider2D _collider2D;
+        [SerializeField] private float ballSpeedThreshold;
         [SerializeField] private bool oneTimePit;
+        [SerializeField] private BoolVariable levelIsCompleted;
 
-        [Header("Sounds")] [SerializeField] private SoundEvent playSoundEvent;
-
+        [Header("Tweening")]
+        [SerializeField] private LeanTweenType scaleTweenType = LeanTweenType.easeOutQuad;
+        [SerializeField] private float ballTweenDuration = .5f;
+        
+        [Header("Sounds")] 
+        [SerializeField] private SoundEvent playSoundEvent;
         [SerializeField] private Sound ballInPit;
         [SerializeField] private Sound ballOverPit;
-        private Collider2D _collider2D;
-        private bool _inPit;
+
 
         private void Start()
         {

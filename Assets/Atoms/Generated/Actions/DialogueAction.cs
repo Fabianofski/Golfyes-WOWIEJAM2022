@@ -1,4 +1,4 @@
-using Atoms.Generated;
+using F4B1.Core.AI;
 
 namespace UnityAtoms.BaseAtoms
 {

@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace F4B1
+namespace F4B1.Core
 {
     public class Cloud : MonoBehaviour
     {

@@ -45,7 +45,6 @@ namespace F4B1.Audio
             while (audioSource.volume > 0)
             {
                 audioSource.volume -= startVolume * Time.deltaTime / fadeTime;
-
                 yield return null;
             }
 

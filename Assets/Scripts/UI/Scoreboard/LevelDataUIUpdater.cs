@@ -4,11 +4,10 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using F4B1.Core;
 using TMPro;
 using UnityEngine;
 
-namespace F4B1.UI
+namespace F4B1.UI.Scoreboard
 {
     public class LevelDataUIUpdater : MonoBehaviour
     {

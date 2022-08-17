@@ -1,5 +1,6 @@
 #if UNITY_2019_1_OR_NEWER
 using F4B1.Core;
+using F4B1.UI.Scoreboard;
 using UnityAtoms.Editor;
 using UnityEditor;
 

@@ -1,7 +1,7 @@
 ﻿using F4B1.Audio;
 using UnityEngine;
 
-namespace Atoms.Generated
+namespace F4B1.Core.AI
 {
     [CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue/New Dialogue", order = 0)]
     public class Dialogue : ScriptableObject

@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.UI.Scoreboard
 {
     [CreateAssetMenu(fileName = "LevelData", menuName = "new LevelData", order = 0)]
     public class LevelData : ScriptableObject

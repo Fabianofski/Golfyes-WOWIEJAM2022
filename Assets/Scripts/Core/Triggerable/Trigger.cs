@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Atoms.Generated;
+using F4B1.Core.AI;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -15,9 +15,12 @@ namespace F4B1.Core.Triggerable
 {
     public class Trigger : MonoBehaviour
     {
+        [Header("Triggerables")]
         [SerializeField] private List<Triggerable> triggerables;
         [SerializeField] private DialogueEvent dialogueEvent;
         [SerializeField] private List<Dialogue> dialogues;
+        
+        [Header("Trigger-Types")]
         [SerializeField] private bool oneTimeTrigger;
         [SerializeField] private bool triggerOnZoneEnter;
         [SerializeField] private bool triggerOnStart;

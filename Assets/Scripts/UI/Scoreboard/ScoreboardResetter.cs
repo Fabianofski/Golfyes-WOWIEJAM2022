@@ -7,7 +7,7 @@
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.UI
+namespace F4B1.UI.Scoreboard
 {
     public class ScoreboardResetter : MonoBehaviour
     {

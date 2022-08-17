@@ -1,5 +1,5 @@
 #if UNITY_2019_1_OR_NEWER
-using Atoms.Generated;
+using F4B1.Core.AI;
 using UnityAtoms.Editor;
 using UnityEditor;
 

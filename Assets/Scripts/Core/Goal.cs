@@ -14,26 +14,25 @@ namespace F4B1.Core
 {
     public class Goal : MonoBehaviour, ITriggerable
     {
-        [Header("Goal")] [SerializeField] private float ballSpeedThreshold;
-
+        [Header("Goal")] 
+        [SerializeField] private float ballSpeedThreshold;
         [SerializeField] private float ballDistanceThreshold;
         [SerializeField] private BoolVariable levelIsCompleted;
 
-        [Header("Animation")] [SerializeField] private LeanTweenType ballScaleTweenType;
-
+        [Header("Tweening - Ball Scaling")] 
+        [SerializeField] private LeanTweenType ballScaleTweenType;
         [SerializeField] private float ballScaleTweenDuration;
-
-        [Header("Triggerable")] [SerializeField]
-        private LeanTweenType goalMoveTweenType;
-
-        [SerializeField] private float goalMoveTweenDuration;
+        
+        [Header("Tweening - Goal moving")] 
+        private int _currentGoalPos;
         [SerializeField] private List<Transform> goalPositions;
+        [SerializeField] private LeanTweenType goalMoveTweenType;
+        [SerializeField] private float goalMoveTweenDuration;
 
-        [Header("Sounds")] [SerializeField] private SoundEvent playSoundEvent;
-
+        [Header("Sounds")] 
+        [SerializeField] private SoundEvent playSoundEvent;
         [SerializeField] private Sound ballInHoleSound;
         [SerializeField] private Sound ballOverHoleSound;
-        private int _currentGoalPos;
 
         private void OnTriggerExit2D(Collider2D col)
         {

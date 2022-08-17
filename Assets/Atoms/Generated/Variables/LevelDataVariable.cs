@@ -1,5 +1,6 @@
 using System;
 using F4B1.Core;
+using F4B1.UI.Scoreboard;
 using UnityEngine;
 
 namespace UnityAtoms.BaseAtoms

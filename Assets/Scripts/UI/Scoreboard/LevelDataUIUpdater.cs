@@ -13,6 +13,7 @@ namespace F4B1.UI.Scoreboard
     {
         [Header("Colors")] 
         [SerializeField] private int worstPar;
+        public int WorstPar { get => worstPar; set => worstPar = value; }
         [SerializeField] private Color firstColor;
         [SerializeField] private Color endColor;
         [SerializeField] private Color defaultColor;
@@ -26,7 +27,7 @@ namespace F4B1.UI.Scoreboard
         {
             Debug.Log($"Content: hole:{data.levelID} par: {data.par} score: {data.strokeSession}");
 
-            hole.text = data.levelID + "";
+            hole.text = data.levelID == -1 ? " " : data.levelID + "";
             par.text = data.par + "";
             score.text = data.strokeSession == -1 ? "-" : data.strokeSession + "";
             score.color = GetScoreColor(data);
@@ -35,7 +36,7 @@ namespace F4B1.UI.Scoreboard
         private Color GetScoreColor(LevelData data)
         {
             var overPar = data.strokeSession - data.par;
-            var color = Color.Lerp(firstColor, endColor, (float) overPar / worstPar);
+            var color = Color.Lerp(firstColor, endColor, (float) overPar / WorstPar);
             return data.strokeSession == -1 ? defaultColor : color;
         }
     }

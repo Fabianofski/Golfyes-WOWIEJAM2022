@@ -15,11 +15,12 @@ namespace F4B1.UI.Scoreboard
         [SerializeField] private LevelDataValueList levelDataList;
         [SerializeField] private Transform container;
         [SerializeField] private GameObject levelDataPrefab;
-
+        [SerializeField] private int totalWorstPar = 8;
 
         private void OnEnable()
         {
             FillScoreboard();
+            AddSummaryToScoreboard();
         }
 
         private void FillScoreboard()
@@ -28,10 +29,30 @@ namespace F4B1.UI.Scoreboard
 
             foreach (var data in levelDataList.List)
             {
-                Debug.Log($"Spawner: hole:{data.levelID} par: {data.par} score: {data.strokeSession}");
                 var go = Instantiate(levelDataPrefab, container);
                 go.GetComponent<LevelDataUIUpdater>().UpdateData(data);
             }
+        }
+
+        private void AddSummaryToScoreboard()
+        {
+            var summary = ScriptableObject.CreateInstance<LevelData>();
+            var parSum = 0;
+            var strokeSum = 0;
+            
+            foreach (var data in levelDataList.List)
+            {
+                parSum += data.strokeSession == -1 ? 0 : data.par;
+                strokeSum += data.strokeSession == -1 ? 0 : data.strokeSession;
+            }
+
+            summary.levelID = -1;
+            summary.par = parSum;
+            summary.strokeSession = strokeSum;
+            var summaryGo = Instantiate(levelDataPrefab, container);
+            var uiUpdater = summaryGo.GetComponent<LevelDataUIUpdater>();
+            uiUpdater.WorstPar = totalWorstPar;
+            uiUpdater.UpdateData(summary);
         }
     }
 }

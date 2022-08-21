@@ -25,8 +25,6 @@ namespace F4B1.UI.Scoreboard
 
         public void UpdateData(LevelData data)
         {
-            Debug.Log($"Content: hole:{data.levelID} par: {data.par} score: {data.strokeSession}");
-
             hole.text = data.levelID == -1 ? " " : data.levelID + "";
             par.text = data.par + "";
             score.text = data.strokeSession == -1 ? "-" : data.strokeSession + "";

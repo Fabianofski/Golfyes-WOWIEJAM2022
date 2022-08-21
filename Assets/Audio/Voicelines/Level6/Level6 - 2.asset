@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level6 - 2
   m_EditorClassIdentifier: 
-  dialogueText: "Ack, sorry. It\u2019s just... why would you want to get the lowest
-    score possible?"
+  dialogueText: Ack, sorry. It's just... why would you want to get the lowest score
+    possible?
   voiceLine: {fileID: 11400000, guid: 9bd1c9c33c2ff0842bb454c25aaa71e8, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

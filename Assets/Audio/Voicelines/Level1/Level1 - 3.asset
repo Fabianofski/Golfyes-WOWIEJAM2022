@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level1 - 3
   m_EditorClassIdentifier: 
-  dialogueText: "OK, to start with, I think you have to get that... \u2018ball\u2019...
-    in that \u2018hole\u2019."
+  dialogueText: OK, to start with, I think you have to get that... 'ball'... in that
+    'hole'.
   voiceLine: {fileID: 11400000, guid: 066250af66bae7142945669293d798d4, type: 2}
   robotEmotion: {fileID: -1058944830, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

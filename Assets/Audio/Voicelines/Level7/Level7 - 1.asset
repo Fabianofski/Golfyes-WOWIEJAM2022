@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level7 - 1
   m_EditorClassIdentifier: 
-  dialogueText: "Maybe this... \u2018golf\u2019 game has a different scoring system?"
+  dialogueText: Maybe this... 'golf' game has a different scoring system?
   voiceLine: {fileID: 11400000, guid: ff1db68833a17e942a36083ec759fb6b, type: 2}
   robotEmotion: {fileID: 1300170422, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

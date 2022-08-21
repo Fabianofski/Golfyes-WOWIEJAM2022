@@ -53,6 +53,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc5b3bc772f4adb8be942229a297650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  worstPar: 3
+  firstColor: {r: 0.38823533, g: 0.67058825, b: 0.24705884, a: 1}
+  endColor: {r: 0.90196085, g: 0.27058825, b: 0.22352943, a: 1}
+  defaultColor: {r: 0.6392157, g: 0.654902, b: 0.7607843, a: 1}
   hole: {fileID: 6843955649068341522}
   par: {fileID: 6843955647872564812}
   score: {fileID: 6843955648859984054}

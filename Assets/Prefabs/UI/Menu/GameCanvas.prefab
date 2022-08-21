@@ -701,6 +701,10 @@ PrefabInstance:
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 6656567856665770959}
+    - target: {fileID: 8235951586306122109, guid: 0878df18399bf7a43935f4ef50c4c11c, type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6656567856665770959}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0878df18399bf7a43935f4ef50c4c11c, type: 3}
 --- !u!224 &1840226595 stripped

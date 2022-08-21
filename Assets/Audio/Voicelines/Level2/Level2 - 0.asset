@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level2 - 0
   m_EditorClassIdentifier: 
-  dialogueText: "As I mentioned earlier, I\u2019ve never played this game."
+  dialogueText: As I mentioned earlier, I've never played this game.
   voiceLine: {fileID: 11400000, guid: d2a76b67ed34d37448bc98627712212b, type: 2}
   robotEmotion: {fileID: 1404914714, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

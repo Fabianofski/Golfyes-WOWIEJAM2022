@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace F4B1.UI
 {
-    public class ScoreTextUpdater : MonoBehaviour
+    public class StrokeTextUpdater : MonoBehaviour
     {
         [Header("Tweening")]
         [SerializeField] private string unit;

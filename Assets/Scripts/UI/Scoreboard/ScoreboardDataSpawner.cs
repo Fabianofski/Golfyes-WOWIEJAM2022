@@ -4,6 +4,7 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
+using System;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -17,6 +18,11 @@ namespace F4B1.UI.Scoreboard
 
 
         private void OnEnable()
+        {
+            FillScoreboard();
+        }
+
+        private void FillScoreboard()
         {
             for (var i = 0; i < container.childCount; i++) Destroy(container.GetChild(i).gameObject);
 

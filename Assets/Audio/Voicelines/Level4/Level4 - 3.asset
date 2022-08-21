@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level4 - 3
   m_EditorClassIdentifier: 
-  dialogueText: "No offense, but it\u2019s almost as if you\u2019re trying to get
-    a low score!"
+  dialogueText: No offense, but it's almost as if you're trying to get a low score!
   voiceLine: {fileID: 11400000, guid: 394287d2ed473e846b61291c586de4c6, type: 2}
   robotEmotion: {fileID: 1469119581, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

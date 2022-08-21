@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level8 - 7
   m_EditorClassIdentifier: 
-  dialogueText: "You should\u2019ve said something sooner!"
+  dialogueText: You should've said something sooner!
   voiceLine: {fileID: 11400000, guid: e31a40c750d436743856b68aa80ed23a, type: 2}
   robotEmotion: {fileID: -1362788185, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

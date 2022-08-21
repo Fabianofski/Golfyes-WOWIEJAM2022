@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level2 - 1
   m_EditorClassIdentifier: 
-  dialogueText: "But I\u2019ve been trained on thousands of games, and in all of
-    them..."
+  dialogueText: But I've been trained on thousands of games, and in all of them...
   voiceLine: {fileID: 11400000, guid: effc90c1b95b939499c857c0ca02bed7, type: 2}
   robotEmotion: {fileID: -1059224503, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

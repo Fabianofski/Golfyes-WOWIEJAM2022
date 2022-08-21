@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b81082231ef412c8f69024a96bb1bda, type: 3}
   m_Name: Level7 - 2
   m_EditorClassIdentifier: 
-  dialogueText: "It doesn\u2019t fit with any of my data, but I can\u2019t think
-    of any other explanation."
+  dialogueText: It doesn't fit with any of my data, but I can't think of any other
+    explanation.
   voiceLine: {fileID: 11400000, guid: 4394f3129ddbc7845a7e3e95c8c009a1, type: 2}
   robotEmotion: {fileID: -602303336, guid: 825d9cbe2ab405a43b15f724d6e7de95, type: 3}

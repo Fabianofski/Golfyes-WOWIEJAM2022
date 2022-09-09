@@ -45,6 +45,7 @@ namespace F4B1.Core.Ball
         [Header("Sound")] 
         [SerializeField] private SoundEvent playSoundEvent;
         [SerializeField] private Sound ballHitsWallSound;
+        [SerializeField] private Sound ballGetsHitSound;
         [SerializeField] private float soundDamper;
         private Vector2 _dir;
 
@@ -67,6 +68,8 @@ namespace F4B1.Core.Ball
             strokes.Value++;
             var modifier = _onSand ? sandShootDamper : 1;
             _rb2d.AddForce(MathF.Pow(dragPower.Value, 2) * _dir * shootPower * modifier, ForceMode2D.Impulse);
+            ballGetsHitSound.volume = dragPower.Value * .7f;
+            playSoundEvent.Raise(ballGetsHitSound);
             dragPower.Value = 0;
         }
 

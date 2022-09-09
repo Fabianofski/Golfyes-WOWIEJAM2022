@@ -4,6 +4,7 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
+using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ namespace F4B1.Core.Triggerable
     {
         [SerializeField] private IntVariable strokes;
         [SerializeField] private int coinAmount;
+        [SerializeField] private Sound collectCoinSound;
+        [SerializeField] private GameObject coinParticle;
+        [SerializeField] private SoundEvent playSoundEvent;
         private CircleCollider2D _circleCollider2D;
 
         private SpriteRenderer _spriteRenderer;
@@ -25,6 +29,8 @@ namespace F4B1.Core.Triggerable
 
         private void OnTriggerEnter2D(Collider2D col)
         {
+            playSoundEvent.Raise(collectCoinSound);
+            Destroy(Instantiate(coinParticle, transform.position, Quaternion.identity), 1f);
             strokes.Value += coinAmount;
             Destroy(gameObject);
         }

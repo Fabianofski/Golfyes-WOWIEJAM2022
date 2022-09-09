@@ -35,6 +35,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6408275000707870210, guid: 9286ba7141058d046a26e4b3878fd33a, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408275000707870210, guid: 9286ba7141058d046a26e4b3878fd33a, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7616624602286547040, guid: 9286ba7141058d046a26e4b3878fd33a, type: 3}
       propertyPath: m_Size.x
       value: 1

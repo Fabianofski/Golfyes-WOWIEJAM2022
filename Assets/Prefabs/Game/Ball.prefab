@@ -384,21 +384,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragLength: 3
-  shootPower: 50
-  strokes: {fileID: 11400000, guid: 68c84704e72dead43a1593348c2c78ed, type: 2}
-  lastPos: {x: 0, y: 0}
   dragPower: {fileID: 11400000, guid: 7d797182ae4170c4aacfe0469ec37ac1, type: 2}
   arrowTransform: {fileID: 7176432954519050055}
+  shootPower: 50
+  strokes: {fileID: 11400000, guid: 68c84704e72dead43a1593348c2c78ed, type: 2}
+  rollSpeed: 1
+  dragOnGrass: 2
+  dragOnSand: 4
+  sandShootDamper: 0.8
   ballIsStill: {fileID: 11400000, guid: 6ba440a3f270f3d4788221247f0d2809, type: 2}
   levelIsComplete: {fileID: 11400000, guid: 365a9d9650726274d8b04fa16d6a35d0, type: 2}
   gameIsPaused: {fileID: 11400000, guid: f85b82cdd999f924ab81d3f0ddc0eecc, type: 2}
   aiTalking: {fileID: 11400000, guid: d2a4f35d3ba424d4eadb0a142a9c09c1, type: 2}
-  rollSpeed: 1
-  sandShootDamper: 0.8
-  dragOnSand: 4
-  dragOnGrass: 2
   playSoundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
   ballHitsWallSound: {fileID: 11400000, guid: b318694bae6db4e43ae3e98e13ab60cd, type: 2}
+  ballGetsHitSound: {fileID: 11400000, guid: 5a6630a93099c644a88125d820f1d7c2, type: 2}
   soundDamper: 3
 --- !u!114 &6904087725041593043
 MonoBehaviour:

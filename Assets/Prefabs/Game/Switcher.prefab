@@ -46,3 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switch1: {fileID: 0}
   switch2: {fileID: 0}
+  playSoundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
+  switchSound: {fileID: 11400000, guid: ba6c095a5f391a54fa37d1667100d0c7, type: 2}

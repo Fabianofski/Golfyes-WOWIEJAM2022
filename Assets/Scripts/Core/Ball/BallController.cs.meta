@@ -3,7 +3,17 @@ guid: 3f16ef685b5d4fd44a077ec64bfe1b34
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - dragPower: {instanceID: 0}
+  - arrowTransform: {instanceID: 0}
+  - strokes: {instanceID: 0}
+  - ballIsStill: {instanceID: 0}
+  - levelIsComplete: {instanceID: 0}
+  - gameIsPaused: {instanceID: 0}
+  - aiTalking: {instanceID: 0}
+  - playSoundEvent: {instanceID: 0}
+  - ballHitsWallSound: {instanceID: 0}
+  - ballGetsHitSound: {fileID: 11400000, guid: 5a6630a93099c644a88125d820f1d7c2, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

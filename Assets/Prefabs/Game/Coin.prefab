@@ -49,6 +49,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strokes: {fileID: 11400000, guid: 68c84704e72dead43a1593348c2c78ed, type: 2}
   coinAmount: 1
+  collectCoinSound: {fileID: 11400000, guid: 8f0eb7ad6b8f2bb44b68a014eb12b157, type: 2}
+  coinParticle: {fileID: 3965505310818199761, guid: be6e798f95b4b7647a81d2e053e78bcd, type: 3}
+  playSoundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
 --- !u!212 &2511321664599636421
 SpriteRenderer:
   m_ObjectHideFlags: 0

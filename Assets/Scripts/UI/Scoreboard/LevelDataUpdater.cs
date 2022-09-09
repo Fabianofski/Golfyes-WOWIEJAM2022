@@ -18,7 +18,6 @@ namespace F4B1.UI.Scoreboard
         {
             if (!levelIsComplete) return;
 
-            Debug.Log($"Updater: {levelData.strokeSession}");
             levelData.strokeSession = strokes.Value;
         }
     }

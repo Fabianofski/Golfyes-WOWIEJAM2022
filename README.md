@@ -3,7 +3,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This game will be made for the [WOWIE JAM 4.0](https://itch.io/jam/wowie-jam-4) hosted by Jason Tyroller. 
+This game was made for the [WOWIE JAM 4.0](https://itch.io/jam/wowie-jam-4) hosted by Jason Tyroller.  
+"Golf, yes?" is a golfing game, where you play together with an AI companion. 
+Your AI friend tries to help you get the highest score possible by blocking paths, moving the goal,
+spawning coins and much more!
 
 ### Built With
 

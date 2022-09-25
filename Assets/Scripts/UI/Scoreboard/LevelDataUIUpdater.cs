@@ -25,7 +25,7 @@ namespace F4B1.UI.Scoreboard
 
         public void UpdateData(LevelData data)
         {
-            hole.text = data.levelID == -1 ? " " : data.levelID + "";
+            hole.text = data.levelID == -1 ? "S\nU\nM" : data.levelID + "";
             par.text = data.par + "";
             score.text = data.strokeSession == -1 ? "-" : data.strokeSession + "";
             score.color = GetScoreColor(data);

@@ -14,6 +14,7 @@ namespace F4B1.UI.Scoreboard
     {
         [SerializeField] private LevelDataValueList levelDataList;
         [SerializeField] private Transform container;
+        [SerializeField] private Transform summaryContainer;
         [SerializeField] private GameObject levelDataPrefab;
         [SerializeField] private int totalWorstPar = 8;
 
@@ -26,6 +27,7 @@ namespace F4B1.UI.Scoreboard
         private void FillScoreboard()
         {
             for (var i = 0; i < container.childCount; i++) Destroy(container.GetChild(i).gameObject);
+            for (var i = 0; i < summaryContainer.childCount; i++) Destroy(summaryContainer.GetChild(i).gameObject);
 
             foreach (var data in levelDataList.List)
             {
@@ -49,7 +51,8 @@ namespace F4B1.UI.Scoreboard
             summary.levelID = -1;
             summary.par = parSum;
             summary.strokeSession = strokeSum;
-            var summaryGo = Instantiate(levelDataPrefab, container);
+            var summaryGo = Instantiate(levelDataPrefab, summaryContainer);
+            Destroy(summaryGo.transform.Find("Dividers").gameObject);
             var uiUpdater = summaryGo.GetComponent<LevelDataUIUpdater>();
             uiUpdater.WorstPar = totalWorstPar;
             uiUpdater.UpdateData(summary);

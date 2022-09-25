@@ -605,6 +605,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 994002648705489325}
     m_Modifications:
+    - target: {fileID: 2940575110456483202, guid: 0878df18399bf7a43935f4ef50c4c11c, type: 3}
+      propertyPath: levelData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c06e50a97dbb5043b6cdf771d6ebdbb, type: 2}
     - target: {fileID: 8235951584811974866, guid: 0878df18399bf7a43935f4ef50c4c11c, type: 3}
       propertyPath: m_Name
       value: Toggles

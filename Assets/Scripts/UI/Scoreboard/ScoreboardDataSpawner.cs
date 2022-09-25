@@ -44,7 +44,7 @@ namespace F4B1.UI.Scoreboard
             
             foreach (var data in levelDataList.List)
             {
-                parSum += data.strokeSession == -1 ? 0 : data.par;
+                parSum += data.par;
                 strokeSum += data.strokeSession == -1 ? 0 : data.strokeSession;
             }
 
